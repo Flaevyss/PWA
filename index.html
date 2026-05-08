@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>График работы</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="manifest" href="manifest.json">
+</head>
+
+<body>
+  <div id="auth-screen">
+    <h2>Вход</h2>
+    <input id="login-name" type="text" placeholder="Ваше имя">
+    <input id="login-pass" type="password" placeholder="Пароль админа">
+    <button id="btn-login">Войти</button>
+  </div>
+
+  <div id="app-screen" class="hidden">
+    <header>
+      <span id="user-greeting"></span>
+      <select id="month-selector"></select>
+      <button id="btn-logout">Выйти</button>
+    </header>
+
+    <div id="admin-panel" class="hidden">
+      <button id="btn-refresh" type="button">🔄 Обновить</button>
+      <button id="btn-add-month" type="button">📅 + Месяц</button>
+      <button id="btn-del-month" type="button">🗑 - Месяц</button>
+      <button id="btn-add-col" type="button">➕ Столбец</button>
+      <button id="btn-del-col" type="button">➖ Столбец</button>
+      <button id="btn-add-row" type="button">👤 + Сотрудник</button>
+      <div class="edit-actions">
+        <button id="btn-edit" type="button">✏️ Режим правки</button>
+        <button id="btn-save" type="button" style="background:#2196F3;">💾 Сохранить</button>
+      </div>
+    </div>
+
+    <div id="table-wrapper">
+      <table id="schedule-table">
+        <thead id="schedule-head"></thead>
+        <tbody id="schedule-body"></tbody>
+      </table>
+    </div>
+  </div>
+
+  <script src="app.js"></script>
+  <script>
+    if ('serviceWorker' in navigator) navigator.serviceWorker.register('/sw.js');
+  </script>
+</body>
+
+</html>

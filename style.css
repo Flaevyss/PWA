@@ -1,0 +1,133 @@
+.hidden {
+  display: none !important;
+}
+
+body {
+  font-family: system-ui, -apple-system, sans-serif;
+  margin: 0;
+  padding: 15px;
+  background: #f5f5f5;
+  color: #333;
+}
+
+header {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+  flex-wrap: wrap;
+  margin-bottom: 10px;
+}
+
+select,
+input {
+  padding: 8px;
+  border-radius: 6px;
+  border: 1px solid #ccc;
+}
+
+#admin-panel {
+  background: #f0f2f5;
+  padding: 10px;
+  border-radius: 8px;
+  margin-bottom: 15px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  align-items: center;
+}
+
+button {
+  cursor: pointer;
+  padding: 8px 12px;
+  border: none;
+  border-radius: 6px;
+  background: #4CAF50;
+  color: #fff;
+  font-size: 14px;
+}
+
+button:hover {
+  opacity: 0.9;
+}
+
+#btn-del-month,
+#btn-del-col {
+  background: #ff5252;
+}
+
+#btn-add-month,
+#btn-add-col,
+#btn-add-row {
+  background: #2196F3;
+}
+
+#btn-refresh {
+  background: #ff9800;
+}
+
+.edit-actions {
+  margin-left: auto;
+  display: flex;
+  gap: 8px;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  background: #fff;
+}
+
+th,
+td {
+  padding: 8px;
+  border: 1px solid #e0e0e0;
+  text-align: center;
+  white-space: nowrap;
+}
+
+input {
+  width: 100%;
+  box-sizing: border-box;
+}
+
+input:disabled {
+  background: #fafafa;
+  border: none;
+  font-weight: 500;
+}
+
+.del-btn {
+  background: #ff5252;
+  padding: 4px 8px;
+  font-size: 12px;
+}
+
+#table-wrapper {
+  overflow-x: auto;
+  -webkit-overflow-scrolling: touch;
+}
+
+th:first-child,
+td:first-child {
+  position: sticky;
+  left: 0;
+  background: inherit;
+  min-width: 110px;
+  z-index: 1;
+}
+
+th:first-child {
+  background: #f0f2f5;
+}
+
+@media (max-width: 600px) {
+  #admin-panel {
+    flex-direction: column;
+    align-items: stretch;
+  }
+
+  .edit-actions {
+    margin-left: 0;
+    justify-content: space-between;
+  }
+}
