@@ -1,4 +1,4 @@
-const APPS_SCRIPT_URL = 'https://script.google.com/macros/s/AKfycbwavzND82HRCllNKpFZOoaFNpvQIYRu-1MwpQjwy4BDqpHX0xooDOumEtvRvb1RJI5W/exec';
+const APPS_SCRIPT_URL = 'https://script.google.com/macros/s/AKfycbwrfQsrqrVNYdzOo3TwgUR2VLvTPTBkoL5IjiEFhORSryLSqf30duk7SCnT2XKwznLk/exec';
 const ADMIN_TOKEN = '1307';
 
 // 🔒 ТОЛЬКО эти пользователи смогут войти
